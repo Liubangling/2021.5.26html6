@@ -1,0 +1,84 @@
+/* 图片一 */
+.he_border1:hover .he_border1_img{ 
+    transform:scale(1.2);
+    opacity: 0.6;
+}
+/* 图片放大 */
+.he_border1:hover .he_border1_caption_p{
+    opacity: 1;
+    transition-duration: 1s;
+    animation: animate_p1 1s ease forwards;
+    overflow: hidden;
+}
+/* 文字上移动画 */
+@keyframes animate_p1{
+   0% {
+        height: 0px;
+        top : 180px;
+   }
+   100% {
+       height: 400px;
+       top : 100px;
+   }
+}
+/*线条出现*/
+.he_border1:hover ::after {
+    opacity: 1;
+    transform:  scaleX(1);
+} 
+.he_border1:hover ::before {
+    transform:  scaleX(1);
+    opacity: 1;
+} 
+
+/* 图片二 */
+.he_border2:hover .he_border2_img{ 
+    transform:scale(1.2);
+    opacity: 0.6;
+}
+/* 图片放大 */
+.he_border2:hover .he_border2_caption_p{
+    opacity: 1;
+    transition-duration: 1s;
+    animation: animate_p2 1s ease forwards;
+    overflow: hidden;
+}
+/* 文字上移动画 */
+@keyframes animate_p2{
+   0% {
+        height: 0px;
+        top : 180px;
+   }
+   100% {
+       height: 400px;
+       top : 100px;
+   }
+}
+/*线条出现*/
+.he_border2:hover ::after {
+    opacity: 1;
+    transform:  scaleX(1);
+} 
+.he_border2:hover ::before {
+    transform:  scaleX(1);
+    opacity: 1;
+} 
+
+/* 图片三 */
+.he_3DFlipX:hover .he_3DFlipX_img{  
+    transform: rotateX(180deg);   /*图片翻转*/
+}
+.he_3DFlipX:hover .he_3DFlipX_caption{
+    opacity: 1;   /* 颜色、文字显现 */
+    transform:rotateX(-360deg);   /*图片翻转*/
+}
+
+/* 图片四*/
+.he_3DFlipY:hover .he_3DFlipY_img{
+    transform: rotateY(-180deg);   /*图片翻转*/
+}
+.he_3DFlipY:hover .he_3DFlipY_caption{
+    opacity: 1;  /* 颜色、文字显现 */
+    transform:rotateX(0deg);/*图片翻转*/
+}
+
