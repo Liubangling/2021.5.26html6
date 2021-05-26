@@ -1,0 +1,121 @@
+/* 图片一 */
+.he_border1:hover .he_border1_img{ 
+    transform:scale(1.2);
+    opacity: 0.6;
+}
+/* 图片放大 */
+.he_border1:hover .he_border1_caption_p{
+    opacity: 1;
+    transition-duration: 1s;
+    animation: animate_p1 1s ease forwards;
+    overflow: hidden;
+}
+/* 文字上移动画 */
+@keyframes animate_p1{
+   0% {
+        height: 0px;
+        top : 180px;
+   }
+   100% {
+       height: 400px;
+       top : 100px;
+   }
+}
+/*线条出现*/
+.he_border1:hover ::after {
+    opacity: 1;
+    transform:  scaleX(1);
+} 
+.he_border1:hover ::before {
+    transform:  scaleX(1);
+    opacity: 1;
+} 
+
+/* 图片二 */
+.he_border2:hover .he_border2_img{ 
+    transform:scale(1.2);
+    opacity: 0.6;
+}
+/* 图片放大 */
+.he_border2:hover .he_border2_caption_p{
+    opacity: 1;
+    transition-duration: 1s;
+    animation: animate_p2 1s ease forwards;
+    overflow: hidden;
+}
+/* 文字上移动画 */
+@keyframes animate_p2{
+   0% {
+        height: 0px;
+        top : 180px;
+   }
+   100% {
+       height: 400px;
+       top : 100px;
+   }
+}
+/*线条出现*/
+.he_border2:hover ::after {
+    opacity: 1;
+    transform:  scaleX(1);
+} 
+.he_border2:hover ::before {
+    transform:  scaleX(1);
+    opacity: 1;
+} 
+
+/* 图片三 */
+.he_3DFlipX:hover .he_3DFlipX_img{
+    animation: animation_img3 1s  forwards;
+}
+.he_3DFlipX:hover .he_3DFlipX_caption{
+    animation: animation_caption3 1s  forwards;
+}
+/*图片翻转*/
+@keyframes animation_img3{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotateX(180deg);
+    }
+}
+/* 颜色、文字显现 */
+@keyframes animation_caption3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform:rotateX(-360deg);
+    }
+}
+
+/* 图片四*/
+.he_3DFlipY:hover .he_3DFlipY_img{
+    animation: animation_img4 1s  forwards;
+}
+.he_3DFlipY:hover .he_3DFlipY_caption{
+    animation: animation_caption4 1s  forwards;
+}
+/*图片翻转*/
+@keyframes animation_img4{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+}
+/* 颜色、文字显现 */
+@keyframes animation_caption4{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacitY: 1;
+        transform:rotateX(-360deg);
+    }
+}
